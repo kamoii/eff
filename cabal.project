@@ -1,4 +1,4 @@
-packages: eff
+packages: */*.cabal
 jobs: $ncpus
 
 repository head.hackage.ghc.haskell.org
@@ -16,7 +16,7 @@ allow-newer:
 
 constraints:
   primitive ==0.7.0.1,
-  QuickCheck ==2.13.2 || ==2.14
+  QuickCheck ==2.14.1
 
 package *
   optimization: 2
